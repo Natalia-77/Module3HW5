@@ -21,7 +21,7 @@ namespace Module3HW5
             var list = new List<Task<string>>();
             list.Add(ReadHello());
             list.Add(ReadWorld());
-            var text = string.Join(" ", await Task.WhenAll(list));
+            var text = string.Join("   ", await Task.WhenAll(list));
             return text;
         }
     }
